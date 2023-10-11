@@ -4,11 +4,11 @@ import { getSession, signOut } from 'next-auth/react'
 import useCurrentUser from '@/hooks/useCurrentUser'
 
 import Navbar from '@/components/Navbar'
-// import Billboard from '@/components/Billboard'
+import Billboard from '@/components/Billboard'
 // import MovieList from '@/components/MovieList'
 // import InfoModal from '@/components/InfoModal'
 // import useMovieList from '@/hooks/useMovieList'
-// import useFavorites from '@/hooks/useFavorites'
+// import useFavorites from ' @/hooks/useFavorites'
 // import useInfoModalStore from '@/hooks/useInfoModalStore'
 
 export async function getServerSideProps(context: NextPageContext) {
@@ -38,8 +38,8 @@ const Home = () => {
     <>
       {/* <InfoModal visible={isOpen} onClose={closeModal} /> */}
       <Navbar />
-      {/* <Billboard />
-      <div className='pb-40'>
+      <Billboard />
+      {/* <div className='pb-40'>
         <MovieList title='Trending Now' data={movies} />
         <MovieList title='My List' data={favorites} />
       </div> */}
